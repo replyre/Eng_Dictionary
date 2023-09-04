@@ -46,8 +46,13 @@ function fetchAPI(word) {
   infoText.style.cssText = " padding: 12px; color:black";
   infoText.innerHTML = `Searching the meaning of <span> ${word}</span>`;
   let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+
   fetch(url)
     .then((res) => res.json())
+    .catch((error) => {
+      infoText.style.color = "red";
+      infoText.innerHTML = "Something went wrong.<br/> Error: " + error.message;
+    })
     .then((result) => data(result, word));
 }
 
