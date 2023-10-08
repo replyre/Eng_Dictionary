@@ -9,3 +9,6 @@ An interactive dictionary UI which provides meanings, synonyms and pronounces th
 ## limitations:
 * only one meaning is provided.
 * API used has a lot of missing informations.
+
+## ScreenShort: 
+![Screenshot (219)](https://github.com/replyre/Eng_Dictionary/assets/121796450/74219858-7bcd-48fa-9b67-dc56a4daedd8)
